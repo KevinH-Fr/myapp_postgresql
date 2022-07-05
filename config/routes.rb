@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   resources :saisons
   resources :clients
+
+
+ 
 end
