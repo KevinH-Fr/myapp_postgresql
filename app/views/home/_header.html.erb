@@ -14,16 +14,6 @@
       	<%= link_to 'A propos',
       		home_index_path, class:"nav-link" %> 
       </li>
-
-      <%# if user_signed_in? %>
-
-         
-       
-        <li class="nav-item">
-          <%= link_to 'Compte',
-            edit_user_registration_path, class:"nav-link" %> 
-        </li>
-
         
         <li class="nav-item">
            <%= link_to 'Saisons',
@@ -76,24 +66,6 @@
           classecuries_path, class:"nav-link" %> 
         </li>
 
-        <li class="nav-item">
-          <%= link_to 'Déconnexion',
-            destroy_user_session_path, method: :delete, class:"nav-link" %> 
-        </li>
-
-
-      <%# else %>
-
-        <li class="nav-item">
-          <%= link_to 'Inscription',
-            new_user_registration_path, class:"nav-link" %> 
-        </li>
-     
-        <li class="nav-item">
-          <%= link_to 'Connexion',
-            new_user_session_path, class:"nav-link" %> 
-        </li>
-     <%# end %>
      
     </ul>
    
