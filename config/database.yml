@@ -80,7 +80,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: myapp_postgresql_production
-  username: kevin
-  password: <%= ENV["MYAPP_POSTGRESQL_DATABASE_PASSWORD"] %>
+ # <<: *default
+ # database: myapp_postgresql_production
+ # username: kevin
+ # password: <%= ENV["MYAPP_POSTGRESQL_DATABASE_PASSWORD"] %>
+ adapter: postgresql
+  prepared_statements: false
+  advisory_locks: false
