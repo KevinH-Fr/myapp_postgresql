@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: myapp_postgresql_production
-  username: kevin
+  database: linuxhint
+  username: linuxhint
   password: 1221
