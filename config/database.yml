@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: myapp_postgresql
+  username: kevin
 
   # The password associated with the postgres role (username).
   #password:
@@ -80,7 +80,7 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
- # <<: *default
+  <<: *default
   database: myapp_postgresql_production
   username: kevin
   password: 1221
