@@ -81,9 +81,6 @@ test:
 #
 production:
  # <<: *default
- # database: myapp_postgresql_production
- # username: kevin
- # password: <%= ENV["MYAPP_POSTGRESQL_DATABASE_PASSWORD"] %>
- adapter: postgresql
-  prepared_statements: false
-  advisory_locks: false
+  database: myapp_postgresql_production
+  username: kevin
+  password: 1221
